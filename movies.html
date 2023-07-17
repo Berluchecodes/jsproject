@@ -20,28 +20,49 @@
             <li class="nav__link">
               <a
                 href="#"
-                class="nav__link--anchor nav__hover-effect link__hover-effect--black"
+                class="nav__link--anchor nav__hover-effect "
                 >Welcome</a
               >
             </li>
             <li class="nav__link">
               <a
                 href="#"
-                class="nav__link--anchor nav__hover-effect link__hover-effect--black"
+                class="nav__link--anchor nav__hover-effect "
                 >About</a
               >
             </li>
             <li class="nav__link">
-              <a href="#" class="nav__link--anchor nav__hover-effect"
-                >Our Collection</a
+              <a href="#featured-movies" class="nav__link--anchor nav__hover-effect "
+                >Featured Movies</a
               >
             </li>
-            <li class="nav__link">
-              <a href="#" class="nav__link--anchor"
+            <li class="nav__link" onclick="toggleContrast()">
+              <a href="#" class="nav__link--anchor dark-theme"
                 ><i class="fas fa-adjust"></i
               ></a>
             </li>
-          </ul>
+
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+                <li class="menu__list">
+                    <a href="#" class="menu__link" onclick="closeMenu()">Welcome</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link no-cursor" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#featured-movies" class="menu__link" onclick="closeMenu()">Featured Movies</a>
+                </li>
+            </ul>
+        </div>
+
         </div>
       </nav>
     </section>
@@ -61,9 +82,11 @@
                           placeholder="Search For Your Movie"
                           
                         />
-                        <button id="search-btn" >
-                            <i class="fa fa-search"></i> 
-                        </button>
+                        <div class="search__btn--container">
+                            <button id="search-btn" >
+                                <i class="fa fa-search"></i> 
+                            </button>
+                        </div>
                 </form>
             </div>
             <div class="featured__wrapper">
@@ -77,10 +100,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: Batman Begins</div>
-                  <div class="movie__year">Year: 2005</div>
-                  <div class="movie__imdbid">imbID: tt0372784</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">Batman Begins</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 2005</div>
+                      <div class="movie__imdbid">imbID: tt0372784</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -90,10 +115,13 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: Fast & Furious 6</div>
-                  <div class="movie__year">Year: 2013</div>
-                  <div class="movie__imdbid">imdbID: tt1905041</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">Fast & Furious 6</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 2013</div>
+                      <div class="movie__imdbid">imdbID: tt1905041</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
+
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -103,10 +131,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: The Batman</div>
-                  <div class="movie__year">Year: 2022</div>
-                  <div class="movie__imdbid">imdbID: tt1877830</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">The Batman</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 2022</div>
+                      <div class="movie__imdbid">imdbID: tt1877830</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -116,10 +146,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: The Fast and the Furious</div>
-                  <div class="movie__year">Year: 2001</div>
-                  <div class="movie__imdbid">imdbID: tt0232500</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">The Fast and the Furious</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 2001</div>
+                      <div class="movie__imdbid">imdbID: tt0232500</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -129,10 +161,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: Batman v Superman: Dawn of Justice</div>
-                  <div class="movie__year">Year: 2016</div>
-                  <div class="movie__imdbid">imdbID: tt2975590</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">Batman v Superman: Dawn of Justice</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 2016</div>
+                      <div class="movie__imdbid">imdbID: tt2975590</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -142,10 +176,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: Fast Five</div>
-                  <div class="movie__year">Year: 2011</div>
-                  <div class="movie__imdbid">imdbID: tt1596343</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">Fast Five</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 2011</div>
+                      <div class="movie__imdbid">imdbID: tt1596343</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -155,10 +191,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: Batman Begins</div>
-                  <div class="movie__year">Year: 2005</div>
-                  <div class="movie__imdbid">imdbID: tt0372784</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">Batman Begins</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 2005</div>
+                      <div class="movie__imdbid">imdbID: tt0372784</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -168,10 +206,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: Batman</div>
-                  <div class="movie__year">Year: 1989</div>
-                  <div class="movie__imdbid">imdbID: tt0096895</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">Batman</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 1989</div>
+                      <div class="movie__imdbid">imdbID: tt0096895</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -181,10 +221,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: Fast & Furious</div>
-                  <div class="movie__year">Year: 2009</div>
-                  <div class="movie__imdbid">imdbID: tt1013752</div>
-                  <div class="movie__type">TYpe: Movie</div>
+                  <div class="movie__title">Fast & Furious</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 2009</div>
+                      <div class="movie__imdbid">imdbID: tt1013752</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -194,10 +236,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: Batman Returns</div>
-                  <div class="movie__year">Year: 1992</div>
-                  <div class="movie__imdbid">imdbID: tt0103776</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">Batman Returns</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 1992</div>
+                      <div class="movie__imdbid">imdbID: tt0103776</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
                 <div class="movie">
                   <figure class="movie__poster--wrapper">
@@ -207,10 +251,12 @@
                       alt=""
                     />
                   </figure>
-                  <div class="movie__title">Title: 2 Fast 2 Furious</div>
-                  <div class="movie__year">Year: 2003</div>
-                  <div class="movie__imdbid">imdbID: tt0322259</div>
-                  <div class="movie__type">Type: Movie</div>
+                  <div class="movie__title">2 Fast 2 Furious</div>
+                  <div class="movie__sub-title--container">
+                      <div class="movie__year">Year: 2003</div>
+                      <div class="movie__imdbid">imdbID: tt0322259</div>
+                      <div class="movie__type">Movie</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,5 +264,25 @@
         </div>
       </section>
     </main>
+
+    <footer>
+        <div class="footer__container">
+          <div class="row">
+            <a href="#">
+              <figure class="footer__logo">
+                <img  src="assets/BPmovieslogo.png" class="footer__logo--img" alt="">
+              </figure>
+            </a>
+            <div class="footer__list">
+              <a href="#" class="footer__link">Welcome</a>
+              <a href="" class="footer__link no-cursor">About</a>
+              <a href="" class="footer__link no-cursor">Contact</a>
+              <a href="" class="footer__link no-cursor">Terms Of Service</a>
+              <a href="#" class="footer__link">Our Collection</a>
+            </div>
+            <div class="footer__copyright">Copyright &copy;2023 BPMovies</div>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>

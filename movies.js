@@ -1,4 +1,29 @@
-// Function to fetch movies from the API
+function openMenu() {
+    document.body.classList += " menu--open"
+}
+
+function closeMenu() {
+    document.body.classList.remove('menu--open')
+}
+
+
+
+
+let contrastToggle = false
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+
+
+
 async function fetchMovies(searchTerm) {
     const apiKey = "51c50cf3";
     const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}`;
@@ -37,7 +62,7 @@ async function fetchMovies(searchTerm) {
     });
   }
   
-  // Event listener for the search button
+  
   const searchButton = document.getElementById("search-btn");
   searchButton.addEventListener("click", async (event) => {
     event.preventDefault();

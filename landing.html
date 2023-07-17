@@ -29,18 +29,38 @@
                     >About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="http://127.0.0.1:5500/movies.html?" class="
                     nav__link--anchor
                     nav__hover-effect"
                     >Our Collection</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleContrast()">
                     <a href="#" class="
                     nav__link--anchor
-                   "
-                    ><i class="fas fa-adjust"></i></a>
+                    dark-theme
+                   "><i class="fas fa-adjust"></i></a>
                 </li>
             </ul>
+
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Welcome</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link no-cursor" onclick="closeMenu()">About</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="http://127.0.0.1:5500/movies.html#" class="menu__link" onclick="closeMenu()">Our Collection</a>
+                    </li>
+                </ul>
+            </div>
             </div>
         </nav>
     
@@ -54,11 +74,7 @@
     <h2 class="landing__page--sub-title">
         UNLOCK THE JOY OF MOVIES WITH <span class="black">BPMOVIES!</span>
     </h2>
-    <div class="search__movies">
-        <input class="landing__input" type="text" placeholder="Search For Your Movie">
-        <button class="search__btn">Search</button>
-    </div>
-    <center><button class="explore__btn">Explore Our Collection <i class="fas fa-arrow-right"></i> </button></center>
+    <center><button class="explore__btn" onclick="window.location.href = 'http://127.0.0.1:5500/movies.html'">Explore Our Collection <i class="fas fa-arrow-right"></i> </button></center>
         <center><img class="landing__img" src="assets/undraw_home_cinema_l7yl.svg" alt=""></center>
 </div>
     </div>
