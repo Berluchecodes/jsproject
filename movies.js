@@ -1,3 +1,4 @@
+// BTN MENU
 function openMenu() {
     document.body.classList += " menu--open"
 }
@@ -8,7 +9,7 @@ function closeMenu() {
 
 
 
-
+// CONTRAST BTN
 let contrastToggle = false
 
 function toggleContrast() {
@@ -23,7 +24,7 @@ function toggleContrast() {
 
 
 
-
+// Function to fetch movies from api
 async function fetchMovies(searchTerm) {
     const apiKey = "51c50cf3";
     const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}`;
@@ -62,7 +63,7 @@ async function fetchMovies(searchTerm) {
     });
   }
   
-  
+// Function to search movies with search btn
   const searchButton = document.getElementById("search-btn");
   searchButton.addEventListener("click", async (event) => {
     event.preventDefault();

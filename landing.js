@@ -1,3 +1,4 @@
+// BTN MENU
 function openMenu() {
     document.body.classList += " menu--open"
 }
@@ -7,7 +8,7 @@ function closeMenu() {
 }
 
 
-
+// CONTRAST BTN
 let contrastToggle = false
 
 function toggleContrast() {

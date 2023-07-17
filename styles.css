@@ -71,7 +71,7 @@ button:active {
 
 /* 
 
-NAV BAR
+NAV BARS
 
 */
 
@@ -257,6 +257,16 @@ header {
   outline: none;
 }
 
+
+
+/* 
+
+MOVIES JS 
+
+*/
+
+
+
 #search-btn {
   border: 1px solid #ff6363;
   background-color: #ff6363;
@@ -376,9 +386,9 @@ form {
 
 /* 
     
-    FOOTER 
+FOOTER MOVIES JS
     
-    */
+*/
 
 footer {
   background-color: #ff6363;
@@ -434,7 +444,16 @@ footer {
 
 .no-cursor {
   cursor: not-allowed;
+
 }
+
+
+
+/* 
+
+RESPONSIVE 
+
+*/
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
