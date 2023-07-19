@@ -1,3 +1,9 @@
+// LOADING STAGE
+
+
+
+
+
 // BTN MENU
 function openMenu() {
     document.body.classList += " menu--open"
@@ -39,7 +45,9 @@ async function fetchMovies(searchTerm) {
       return [];
     }
   }
-  
+
+
+
   // Function to display movies on the HTML page
   function displayMovies(movies) {
     const moviesContainer = document.querySelector(".movies");
@@ -76,5 +84,8 @@ async function fetchMovies(searchTerm) {
       displayMovies(movies);
     }
   });
+
+
+
 
 
