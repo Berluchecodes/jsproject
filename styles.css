@@ -497,8 +497,6 @@ RESPONSIVE
     font-size: 42px;
   }
 
-  .explore__btn {
-  }
 
   .movie {
     width: 50%;
@@ -546,9 +544,6 @@ RESPONSIVE
     padding-left: 24px;
   }
 
-  .nav__link {
-    /* display: none;  */
-  }
 
   .footer__link {
     font-size: 16px;
