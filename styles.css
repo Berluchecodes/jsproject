@@ -81,7 +81,7 @@ nav {
   background-color: #ff6363;
 }
 
-.nav__container {
+.nav__bar--container {
   width: 100%;
   max-width: 1600px;
   display: flex;
